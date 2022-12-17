@@ -36,19 +36,19 @@ export default function Home() {
           ) : (
             <div className={styles.grid}>
               {pokemons.map(pokemon => (
-                <div className={styles.card} key={pokemon.id}>
-                  <Link href={`/pokemon/${pokemon.id}`}>
+                <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
+                  <div className={styles.card}>
                     <Image
                       placeholder='blur'
                       blurDataURL={rgbDataURL(2, 129, 210)}
                       src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`}
                       alt={pokemon.name}
-                      width={200}
-                      height={200}
+                      width={180}
+                      height={180}
                     />
                     <h3>{pokemon.name}</h3>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
             </div>
           )}
