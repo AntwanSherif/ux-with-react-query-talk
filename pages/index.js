@@ -2,8 +2,11 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Card, CardGroup, Typography } from '@douyinfe/semi-ui';
 import { rgbDataURL } from '../helpers/imagePlaceholder';
 import styles from '../styles/Home.module.css';
+
+const { Text } = Typography;
 
 export default function Home() {
   const [pokemons, setPokemons] = useState([]);
@@ -28,32 +31,66 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className={styles.container}>
-        <h1 className={styles.title}>Pokemon Battle!</h1>
-        <main className={styles.main}>
-          {!pokemons.length ? (
-            'loading...'
-          ) : (
-            <div className={styles.grid}>
-              {pokemons.map(pokemon => (
-                <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
-                  <div className={styles.card}>
+      <main>
+        {!pokemons.length ? (
+          'loading...'
+        ) : (
+          // <div className={styles.grid}>
+          // {pokemons.map(pokemon => (
+          //   <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
+          //     <div className={styles.card}>
+          //       <Image
+          //         placeholder='blur'
+          //         blurDataURL={rgbDataURL(2, 129, 210)}
+          //         src={pokemon.image}
+          //         alt={pokemon.name}
+          //         width={180}
+          //         height={180}
+          //       />
+          //       <h3>{pokemon.name}</h3>
+          //     </div>
+          //   </Link>
+          // ))}
+          // </div>
+
+          <CardGroup spacing={30} style={{ width: '100%' }}>
+            {pokemons.map(pokemon => (
+              <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
+                <Card
+                  shadows='hover'
+                  style={{ width: 200 }}
+                  cover={
                     <Image
                       placeholder='blur'
                       blurDataURL={rgbDataURL(2, 129, 210)}
-                      src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`}
+                      src={pokemon.image}
                       alt={pokemon.name}
-                      width={180}
-                      height={180}
+                      width={200}
+                      height={200}
                     />
-                    <h3>{pokemon.name}</h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
-        </main>
-      </div>
+                  }
+                >
+                  <Card.Meta title={pokemon.name} />
+                  {/* <Text>{pokemon.name}</Text> */}
+                </Card>
+              </Link>
+              // <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
+              //   <div className={styles.card}>
+              // <Image
+              //   placeholder='blur'
+              //   blurDataURL={rgbDataURL(2, 129, 210)}
+              //   src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`}
+              //   alt={pokemon.name}
+              //   width={180}
+              //   height={180}
+              // />
+              //     <h3>{pokemon.name}</h3>
+              //   </div>
+              // </Link>
+            ))}
+          </CardGroup>
+        )}
+      </main>
     </>
   );
 }

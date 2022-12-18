@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@douyinfe/semi-ui": "^2.25.0",
     "@next/font": "13.0.7",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.7",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@douyinfe/semi-next": "^2.25.0"
   }
 }
