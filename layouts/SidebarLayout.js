@@ -1,16 +1,17 @@
-import { Layout, Typography } from '@douyinfe/semi-ui';
+import { Layout } from '@douyinfe/semi-ui';
+import { Header } from '@components/Header';
+import { Sidebar } from '@components/Sidebar';
 import styles from './SidebarLayout.module.css';
 
-const { Header, Sider, Content } = Layout;
+const { Content } = Layout;
 
 export function SidebarLayout({ children }) {
   return (
     <Layout className={styles.container}>
-      <Header className={styles.header}>
-        <Typography.Title>Pokemon Battle!</Typography.Title>
-      </Header>
+      <Header />
+
       <Layout className={styles.layout}>
-        <Sider className={styles.sidebar}></Sider>
+        <Sidebar />
 
         <Content>
           <div className={styles.content}>{children}</div>

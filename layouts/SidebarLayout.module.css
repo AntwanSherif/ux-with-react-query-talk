@@ -9,15 +9,9 @@
   grid-template-columns: minmax(200px, 20%) 1fr;
 }
 
-.sidebar {
-  background: lightgrey;
-  border: 1px solid var(--semi-color-border);
-  border-radius: 10px;
-  margin-right: 1rem;
-}
-
 .content {
   border-radius: 10px;
   border: 1px solid var(--semi-color-border);
   padding: 3rem;
 }
+

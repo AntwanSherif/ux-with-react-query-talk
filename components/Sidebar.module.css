@@ -1,0 +1,6 @@
+.container {
+  background: lightgrey;
+  border: 1px solid var(--semi-color-border);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
