@@ -1,6 +1,18 @@
 .container {
-  background: lightgrey;
+  background: #ddd;
   border: 1px solid var(--semi-color-border);
   border-radius: 10px;
   margin-right: 1rem;
 }
+
+.listContainer .list-item:hover {
+  /* .list-item {
+    &:hover { */
+  background-color: red;
+  /* } */
+  /* &:active {
+      background-color: var(--semi-color-fill-1);
+    } */
+  /* } */
+}
+

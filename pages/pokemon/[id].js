@@ -19,7 +19,6 @@ export default function Details() {
   useEffect(() => {
     const getPokemon = async () => {
       const result = await fetch(`/api/pokemon/${pokemonId}`);
-      console.log(result);
       const data = await result.json();
 
       setPokemon(data);
@@ -41,6 +40,22 @@ export default function Details() {
         <IconChevronLeft size='large' style={{ marginRight: '0.5rem' }} />
         Back to Home
       </Link>
+
+      <div>
+        <button
+          onClick={() =>
+            fetch(`/api/pokemon/${pokemonId}`, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ ...pokemon, name: 'Antwan' })
+            })
+          }
+        >
+          Update Pokemon Name
+        </button>
+      </div>
 
       <div className={styles.layout}>
         <Skeleton style={{ width: 300, height: 300 }} placeholder={<Skeleton.Image />} loading={loading}>
