@@ -1,14 +1,10 @@
-import { promises as fs } from 'fs';
+import fs from 'fs';
 
-let pokemons = require('json/data.json').map(pokemon => {
-  pokemon.image = `${process.env.endpoint}/${pokemon.image}`;
-  return pokemon;
-});
+let pokemons = require('json/data.json');
 
 export const pokemonsRepo = {
   getAll: () => pokemons,
   getById: id => pokemons.find(x => x.id.toString() === id.toString()),
-  find: x => pokemons.find(x),
   // create,
   update,
   delete: _delete
