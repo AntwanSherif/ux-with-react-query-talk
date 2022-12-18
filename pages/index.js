@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardGroup, Typography } from '@douyinfe/semi-ui';
+import { SidebarLayout } from '@layouts/SidebarLayout';
 import { rgbDataURL } from '@helpers/imagePlaceholder';
 import styles from '@styles/Home.module.css';
 
@@ -94,4 +95,8 @@ export default function Home() {
     </>
   );
 }
+
+Home.getLayout = function getLayout(page) {
+  return <SidebarLayout>{page}</SidebarLayout>;
+};
 

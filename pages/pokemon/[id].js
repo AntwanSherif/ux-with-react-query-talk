@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { IconChevronLeft } from '@douyinfe/semi-icons';
 import { Skeleton } from '@douyinfe/semi-ui';
 import styles from '@styles/Details.module.css';
+import { SidebarLayout } from '@layouts/SidebarLayout';
 
 const skeletonPokemon = { name: '', image: '' };
 
@@ -69,3 +70,6 @@ export default function Details() {
   );
 }
 
+Details.getLayout = function getLayout(page) {
+  return <SidebarLayout>{page}</SidebarLayout>;
+};
