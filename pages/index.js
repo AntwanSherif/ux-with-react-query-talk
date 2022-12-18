@@ -14,8 +14,8 @@ export default function Home() {
 
   useEffect(() => {
     const getPokemon = async () => {
-      const resp = await fetch('/api/pokemons');
-      const data = await resp.json();
+      const result = await fetch('/api/pokemons');
+      const data = await result.json();
 
       setPokemons(data);
     };
@@ -54,7 +54,7 @@ export default function Home() {
           // ))}
           // </div>
 
-          <CardGroup spacing={30} style={{ width: '100%' }}>
+          <CardGroup spacing={30} className={styles.cardsGrid}>
             {pokemons.map(pokemon => (
               <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
                 <Card

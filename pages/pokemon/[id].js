@@ -18,7 +18,8 @@ export default function Details() {
 
   useEffect(() => {
     const getPokemon = async () => {
-      const result = await fetch(`/api/pokemon/${pokemonId}.json`);
+      const result = await fetch(`/api/pokemon/${pokemonId}`);
+      console.log(result);
       const data = await result.json();
 
       setPokemon(data);
@@ -68,7 +69,7 @@ export default function Details() {
           {pokemon.stats && (
             <table className={styles.stats}>
               <tbody>
-                {pokemon.stats.map(({ name, value }) => (
+                {Object.entries(pokemon.stats).map(([name, value]) => (
                   <tr key={name}>
                     <td className={styles.attribute}>{name}</td>
                     <td>{value}</td>
