@@ -16,9 +16,9 @@
   margin-bottom: 0.5rem;
 }
 
-.type {
-  font-style: italic;
-  margin-bottom: 0.5rem;
+.tags {
+  display: flex;
+  align-items: center;
 }
 
 .stats {
@@ -27,7 +27,6 @@
 
 .attribute {
   font-weight: bold;
-  /* text-align: right; */
   padding-right: 1rem;
 }
 

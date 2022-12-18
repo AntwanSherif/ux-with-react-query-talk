@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IconChevronLeft } from '@douyinfe/semi-icons';
-import { Skeleton } from '@douyinfe/semi-ui';
+import { Skeleton, TagGroup } from '@douyinfe/semi-ui';
 import styles from '@styles/Details.module.css';
 import { SidebarLayout } from '@layouts/SidebarLayout';
 
@@ -50,7 +50,20 @@ export default function Details() {
           <Skeleton style={{ width: 180 }} placeholder={<Skeleton.Title className={styles.name} />} loading={loading}>
             <div className={styles.name}>{pokemon.name}</div>
           </Skeleton>
-          <div className={styles.type}>{pokemon.type?.join(', ')}</div>
+
+          <Skeleton
+            style={{ width: 120 }}
+            placeholder={<Skeleton.Title className={styles.type} style={{ height: 15 }} />}
+            loading={loading}
+          >
+            <TagGroup
+              maxTagCount={5}
+              className={styles.tags}
+              showPopover
+              tagList={pokemon.type?.map(t => ({ children: t }))}
+              size='large'
+            />
+          </Skeleton>
 
           {pokemon.stats && (
             <table className={styles.stats}>
@@ -73,3 +86,4 @@ export default function Details() {
 Details.getLayout = function getLayout(page) {
   return <SidebarLayout>{page}</SidebarLayout>;
 };
+
