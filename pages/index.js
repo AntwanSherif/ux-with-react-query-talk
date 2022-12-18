@@ -3,8 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardGroup, Typography } from '@douyinfe/semi-ui';
-import { rgbDataURL } from '../helpers/imagePlaceholder';
-import styles from '../styles/Home.module.css';
+import { rgbDataURL } from '@helpers/imagePlaceholder';
+import styles from '@styles/Home.module.css';
 
 const { Text } = Typography;
 

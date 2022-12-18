@@ -1,6 +1,6 @@
 import { Layout, Typography } from '@douyinfe/semi-ui';
-import styles from '../styles/App.module.css';
-import '../styles/globals.css';
+import styles from '@styles/App.module.css';
+import '@styles/globals.css';
 
 const { Header, Sider, Content } = Layout;
 

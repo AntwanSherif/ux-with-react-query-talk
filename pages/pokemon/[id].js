@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { IconChevronLeft } from '@douyinfe/semi-icons';
 import { Skeleton } from '@douyinfe/semi-ui';
-import styles from '../../styles/Details.module.css';
+import styles from '@styles/Details.module.css';
 
 const skeletonPokemon = { name: '', image: '' };
 
