@@ -19,7 +19,7 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .card img {
     width: 120px;
     height: 120px;

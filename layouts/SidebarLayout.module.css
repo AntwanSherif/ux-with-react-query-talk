@@ -9,7 +9,7 @@
   background-color: var(--blue);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     padding: 10rem;
     padding-top: 0;
