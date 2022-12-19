@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Card, CardGroup } from '@douyinfe/semi-ui';
 import { SidebarLayout } from '@layouts/SidebarLayout';
-import { rgbDataURL } from '@helpers/imagePlaceholder';
+import { PokemonsList } from '@components/PokemonsList';
 import styles from '@styles/Home.module.css';
 
 export default function Home() {
@@ -34,28 +32,7 @@ export default function Home() {
         {!pokemons.length ? (
           <Image src='/loading.gif' alt='loading...' width={200} height={200} />
         ) : (
-          <CardGroup spacing={30} className={styles.cardsGrid}>
-            {pokemons.map(pokemon => (
-              <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
-                <Card
-                  shadows='hover'
-                  className={styles.card}
-                  cover={
-                    <Image
-                      placeholder='blur'
-                      blurDataURL={rgbDataURL(220, 220, 220)}
-                      src={pokemon.image}
-                      alt={pokemon.name}
-                      width={200}
-                      height={200}
-                    />
-                  }
-                >
-                  <Card.Meta title={pokemon.name} />
-                </Card>
-              </Link>
-            ))}
-          </CardGroup>
+          <PokemonsList pokemons={pokemons} />
         )}
       </main>
     </div>
