@@ -2,8 +2,16 @@
   border-radius: 10px;
 }
 
-.card:hover {
+.card:not(.loading):hover {
   animation: shake 1s;
+}
+
+.card.loading {
+  opacity: 0.7;
+}
+
+.card.loading:hover {
+  box-shadow: none;
 }
 
 .content {
@@ -13,6 +21,10 @@
   justify-content: center;
   align-items: center;
   background-color: var(--red);
+}
+
+.content.loading {
+  background-color: lightgray;
 }
 
 @media (max-width: 1024px) {
@@ -28,6 +40,10 @@
 
 .text {
   justify-content: center;
+}
+
+.cardBody {
+  text-align: center;
 }
 
 @keyframes shake {
