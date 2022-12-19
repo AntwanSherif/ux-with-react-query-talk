@@ -18,7 +18,7 @@ export default function Details() {
 
   useEffect(() => {
     const getPokemon = async () => {
-      const result = await fetch(`/api/pokemon/${pokemonId}`);
+      const result = await fetch(`/api/pokemons/${pokemonId}`);
       const data = await result.json();
 
       setPokemon(data);
@@ -38,10 +38,10 @@ export default function Details() {
   return (
     <div>
       <Head>
-        <title>{pokemon?.name ?? 'Pokemon Battle!'}</title>
+        <title>{pokemon?.name ?? 'Pokemons'}</title>
       </Head>
 
-      <Link href='/' className={styles.backHomeLink}>
+      <Link href='/pokemons' className={styles.backHomeLink}>
         <IconChevronLeft size='large' style={{ marginRight: '0.5rem' }} />
         Back to Home
       </Link>
@@ -49,7 +49,7 @@ export default function Details() {
       <div>
         {/* <button
           onClick={() =>
-            fetch(`/api/pokemon/${pokemonId}`, {
+            fetch(`/api/pokemons/${pokemonId}`, {
               method: 'PUT',
               headers: {
                 'Content-Type': 'application/json'
