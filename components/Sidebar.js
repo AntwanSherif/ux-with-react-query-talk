@@ -50,7 +50,7 @@ export function Sidebar() {
         size='small'
         style={{ flexBasis: '100%', flexShrink: 0 }}
         renderItem={pokemon => (
-          <Link href={`/pokemon/${pokemon.id}`} className={styles.listItem}>
+          <Link href={`/pokemons/${pokemon.id}`} className={styles.listItem}>
             <List.Item className={styles.listItem}>
               <Image className={styles.thumbnail} src={pokemon.image} alt={pokemon.name} width={50} height={50} />
               <Typography.Text strong className={styles.name}>
