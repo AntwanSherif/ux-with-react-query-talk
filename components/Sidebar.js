@@ -45,15 +45,15 @@ export function Sidebar() {
         className={styles.listContainer}
         dataSource={filteredList}
         split={false}
-        emptyContent={<Typography.Text>{loading ? 'loading...' : 'No Pokemon Found'}</Typography.Text>}
-        header={<Input onChange={onSearch} showClear placeholder='search' prefix={<IconSearch />} />}
+        emptyContent={<Typography.Text>{loading ? 'loading...' : 'No pokemons found'}</Typography.Text>}
+        header={<Input onChange={onSearch} showClear placeholder='search' prefix={<IconSearch />} size='large' />}
         size='small'
         style={{ flexBasis: '100%', flexShrink: 0 }}
         renderItem={pokemon => (
           <Link href={`/pokemon/${pokemon.id}`} className={styles.listItem}>
             <List.Item className={styles.listItem}>
               <Image className={styles.thumbnail} src={pokemon.image} alt={pokemon.name} width={40} height={40} />
-              <Typography.Text>{pokemon.name}</Typography.Text>
+              <Typography.Text strong>{pokemon.name}</Typography.Text>
             </List.Item>
           </Link>
         )}

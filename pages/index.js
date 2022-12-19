@@ -59,11 +59,11 @@ export default function Home() {
               <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
                 <Card
                   shadows='hover'
-                  style={{ width: 200 }}
+                  className={styles.card}
                   cover={
                     <Image
-                      // placeholder='blur'
-                      // blurDataURL={rgbDataURL(2, 129, 210)}
+                      placeholder='blur'
+                      blurDataURL={rgbDataURL(220, 220, 220)}
                       src={pokemon.image}
                       alt={pokemon.name}
                       width={200}

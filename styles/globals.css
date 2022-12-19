@@ -1,5 +1,12 @@
 @import '~@douyinfe/semi-ui/dist/css/semi.min.css';
 
+:root {
+  --yellow: #ffcb05;
+  --blue: #3d7dca;
+  --navy-blue: #003a70;
+  --red: #e3350d;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

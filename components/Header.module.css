@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
+  /* background-color: transparent; */
 }
 
 .logo {
@@ -10,3 +11,4 @@
   /* width: 130px; */
   height: auto;
 }
+
