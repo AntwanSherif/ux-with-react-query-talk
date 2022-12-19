@@ -4,7 +4,7 @@ import { sleep } from '@helpers/sleep';
 export default async function handler(req, res) {
   const { id } = req.query;
 
-  await sleep(3000);
+  await sleep(1000);
 
   if (req.method === 'PUT') {
     pokemonsRepo.update(id, { ...req.body });

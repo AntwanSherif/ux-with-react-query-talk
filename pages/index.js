@@ -30,7 +30,7 @@ export default function Home() {
 
       <main>
         {!pokemons.length ? (
-          <Image src='/loading.gif' alt='loading...' width={200} height={200} />
+          <Image src='/loading.gif' alt='loading...' width={180} height={180} />
         ) : (
           <PokemonsList pokemons={pokemons} />
         )}
