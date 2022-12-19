@@ -12,7 +12,7 @@ export function Header() {
         </Link>
       </div>
 
-      <Typography.Text>
+      <Typography.Text size='large' className={styles.total}>
         Total:
         <Typography.Text strong> 10</Typography.Text>
       </Typography.Text>

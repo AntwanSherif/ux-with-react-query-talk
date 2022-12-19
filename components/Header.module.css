@@ -2,13 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: white; */
-  /* background-color: transparent; */
+  background-color: transparent;
 }
 
 .logo {
   width: 200px;
-  /* width: 130px; */
   height: auto;
+  -webkit-filter: drop-shadow(5px 5px 5px #fff);
+  filter: drop-shadow(5px 5px 5px #fff);
 }
 
+.total,
+.total * {
+  color: white;
+}
