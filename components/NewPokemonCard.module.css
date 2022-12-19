@@ -1,0 +1,43 @@
+.card:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red);
+}
+
+.icon {
+  font-size: 7rem;
+}
+
+.text {
+  justify-content: center;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+

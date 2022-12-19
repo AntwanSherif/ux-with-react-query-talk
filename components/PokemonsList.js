@@ -3,10 +3,13 @@ import Link from 'next/link';
 import { Card, CardGroup } from '@douyinfe/semi-ui';
 import { rgbDataURL } from '@helpers/imagePlaceholder';
 import styles from './PokemonsList.module.css';
+import { NewPokemonCard } from './NewPokemonCard';
 
 export function PokemonsList({ pokemons }) {
   return (
     <CardGroup spacing={30} className={styles.cardsGrid}>
+      <NewPokemonCard className={styles.card} />
+
       {pokemons.map(pokemon => (
         <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
           <Card
