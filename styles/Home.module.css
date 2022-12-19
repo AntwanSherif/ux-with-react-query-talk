@@ -1,3 +1,14 @@
+.container {
+  height: 100%;
+}
+
+.container main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
