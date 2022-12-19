@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 export function Header() {
   return (
     <div className={styles.container}>
-      <Link href='/'>
+      <Link href='/pokemons'>
         <Image className={styles.logo} src='/logo.png' alt='pokemon logo' width='500' height='184' priority />
       </Link>
     </div>

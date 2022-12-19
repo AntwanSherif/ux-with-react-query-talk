@@ -7,7 +7,9 @@ const { Content } = Layout;
 
 export function SidebarLayout({ children }) {
   return (
-    <div>
+    <>
+      <div className={styles.backdrop} />
+
       <Layout.Header className={styles.header}>
         <Header />
       </Layout.Header>
@@ -21,7 +23,7 @@ export function SidebarLayout({ children }) {
           </Content>
         </Layout>
       </Layout>
-    </div>
+    </>
   );
 }
 

@@ -2,11 +2,13 @@
   min-height: 100vh !important;
   padding: 3rem;
   padding-top: 0;
+  position: relative;
 }
 
 .header {
   padding: 0.5rem 3rem;
   background-color: var(--blue);
+  position: relative;
 }
 
 @media (min-width: 1280px) {

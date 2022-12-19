@@ -1,27 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
-import { SidebarLayout } from '@layouts/SidebarLayout';
-import { PokemonsList } from '@components/PokemonsList';
-import styles from '@styles/Home.module.css';
+import styles from '@styles/SplashScreen.module.css';
 
-const getPokemons = async onComplete => {
-  const result = await fetch('/api/pokemons');
-  const data = await result.json();
-
-  onComplete(data);
-};
-export default function Home() {
-  const [pokemons, setPokemons] = useState([]);
-
-  useEffect(() => {
-    getPokemons(setPokemons);
-  }, []);
-
-  const refetch = useCallback(() => {
-    getPokemons(setPokemons);
-  }, []);
-
+export default function SplashScreen() {
   return (
     <div className={styles.container}>
       <Head>
@@ -31,18 +13,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main>
-        {!pokemons.length ? (
-          <Image src='/loading.gif' alt='loading...' width={180} height={180} />
-        ) : (
-          <PokemonsList pokemons={pokemons} onAdd={refetch} />
-        )}
-      </main>
+      <Image className={styles.logo} src='/logo.png' alt='pokemon logo' width='300' height='100' priority />
+
+      <Link href='/pokemons'>
+        <Image className={styles.pokeball} src='/pokeball.png' alt='pokeball' width='100' height='100' priority />
+      </Link>
     </div>
   );
 }
-
-Home.getLayout = function getLayout(page) {
-  return <SidebarLayout>{page}</SidebarLayout>;
-};
 

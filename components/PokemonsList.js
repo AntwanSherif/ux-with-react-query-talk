@@ -11,7 +11,7 @@ export function PokemonsList({ pokemons, onAdd }) {
       <NewPokemonCard className={styles.card} onAdd={onAdd} />
 
       {pokemons.map(pokemon => (
-        <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
+        <Link key={pokemon.id} href={`/pokemons/${pokemon.id}`}>
           <Card
             shadows='hover'
             className={styles.card}

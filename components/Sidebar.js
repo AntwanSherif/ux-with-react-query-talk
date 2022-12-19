@@ -52,8 +52,10 @@ export function Sidebar() {
         renderItem={pokemon => (
           <Link href={`/pokemon/${pokemon.id}`} className={styles.listItem}>
             <List.Item className={styles.listItem}>
-              <Image className={styles.thumbnail} src={pokemon.image} alt={pokemon.name} width={40} height={40} />
-              <Typography.Text strong>{pokemon.name}</Typography.Text>
+              <Image className={styles.thumbnail} src={pokemon.image} alt={pokemon.name} width={50} height={50} />
+              <Typography.Text strong className={styles.name}>
+                {pokemon.name}
+              </Typography.Text>
             </List.Item>
           </Link>
         )}
