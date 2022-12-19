@@ -29,6 +29,6 @@
 .content {
   border-radius: 10px;
   border: 1px solid var(--semi-color-border);
-  padding: 3rem;
+  padding: 3rem 1rem;
 }
 

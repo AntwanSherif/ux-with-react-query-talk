@@ -15,9 +15,9 @@
   background-color: var(--red);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .content {
-    width: 100%;
+    width: 120px;
     height: 120px;
   }
 }
