@@ -2,6 +2,8 @@ import { pokemonsRepo } from '@helpers/api/pokemonsRepo';
 import { sleep } from '@helpers/sleep';
 
 export default async function handler(req, res) {
+  res.setHeader('Cache-Control', 'no-store');
+
   await sleep(3000);
 
   if (req.method === 'POST') {

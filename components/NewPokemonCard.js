@@ -6,7 +6,7 @@ import styles from './NewPokemonCard.module.css';
 
 const newPokemonsNames = ['karma', 'Maged', 'Meego', 'Aya', 'Samir'];
 
-export function NewPokemonCard() {
+export function NewPokemonCard({ onAdd }) {
   const [loading, setLoading] = useState(false);
 
   const createNewPokemon = () => {
@@ -15,9 +15,11 @@ export function NewPokemonCard() {
     fetch(`/api/pokemons`, {
       method: 'POST',
       body: newPokemonsNames.pop()
-    }).finally(() => {
-      setLoading(false);
-    });
+    })
+      .then(() => onAdd())
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   const cardClasses = loading ? `${styles.card} ${styles.loading}` : styles.card;

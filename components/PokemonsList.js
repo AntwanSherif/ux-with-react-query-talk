@@ -5,10 +5,10 @@ import { rgbDataURL } from '@helpers/imagePlaceholder';
 import styles from './PokemonsList.module.css';
 import { NewPokemonCard } from './NewPokemonCard';
 
-export function PokemonsList({ pokemons }) {
+export function PokemonsList({ pokemons, onAdd }) {
   return (
     <CardGroup spacing={30} className={styles.cardsGrid}>
-      <NewPokemonCard className={styles.card} />
+      <NewPokemonCard className={styles.card} onAdd={onAdd} />
 
       {pokemons.map(pokemon => (
         <Link key={pokemon.id} href={`/pokemon/${pokemon.id}`}>
