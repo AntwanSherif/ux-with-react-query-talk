@@ -28,6 +28,11 @@ export default function Details() {
     if (pokemonId) {
       getPokemon();
     }
+
+    return () => {
+      setPokemon(skeletonPokemon);
+      setLoading(true);
+    };
   }, [pokemonId]);
 
   return (
@@ -42,7 +47,7 @@ export default function Details() {
       </Link>
 
       <div>
-        <button
+        {/* <button
           onClick={() =>
             fetch(`/api/pokemon/${pokemonId}`, {
               method: 'PUT',
@@ -54,7 +59,7 @@ export default function Details() {
           }
         >
           Update Pokemon Name
-        </button>
+        </button> */}
       </div>
 
       <div className={styles.layout}>

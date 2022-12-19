@@ -62,8 +62,8 @@ export default function Home() {
                   style={{ width: 200 }}
                   cover={
                     <Image
-                      placeholder='blur'
-                      blurDataURL={rgbDataURL(2, 129, 210)}
+                      // placeholder='blur'
+                      // blurDataURL={rgbDataURL(2, 129, 210)}
                       src={pokemon.image}
                       alt={pokemon.name}
                       width={200}

@@ -7,17 +7,21 @@ const { Content } = Layout;
 
 export function SidebarLayout({ children }) {
   return (
-    <Layout className={styles.container}>
-      <Header />
+    <div>
+      <Layout.Header className={styles.header}>
+        <Header />
+      </Layout.Header>
 
-      <Layout className={styles.layout}>
-        <Sidebar />
+      <Layout className={styles.container}>
+        <Layout className={styles.body}>
+          <Sidebar />
 
-        <Content>
-          <div className={styles.content}>{children}</div>
-        </Content>
+          <Content>
+            <div className={styles.content}>{children}</div>
+          </Content>
+        </Layout>
       </Layout>
-    </Layout>
+    </div>
   );
 }
 

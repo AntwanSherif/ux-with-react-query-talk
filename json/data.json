@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Bulbasaur",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/bulbasaur.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
         "type": [
             "Grass",
             "Poison"
@@ -19,7 +19,7 @@
     {
         "id": 2,
         "name": "Ivysaur",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/ivysaur.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
         "type": [
             "Grass",
             "Poison"
@@ -36,7 +36,7 @@
     {
         "id": 4,
         "name": "Charmander",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/charmander.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
         "type": [
             "Fire"
         ],
@@ -52,7 +52,7 @@
     {
         "id": 5,
         "name": "Charmeleon",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/charmeleon.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png",
         "type": [
             "Fire"
         ],
@@ -68,7 +68,7 @@
     {
         "id": 6,
         "name": "Charizard",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/charizard.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png",
         "type": [
             "Fire",
             "Flying"
@@ -85,7 +85,7 @@
     {
         "id": 7,
         "name": "Squirtle",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/squirtle.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
         "type": [
             "Water"
         ],
@@ -101,7 +101,7 @@
     {
         "id": 8,
         "name": "Wartortle",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/wartortle.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png",
         "type": [
             "Water"
         ],
@@ -117,7 +117,7 @@
     {
         "id": 9,
         "name": "Blastoise",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/blastoise.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
         "type": [
             "Water"
         ],
@@ -133,7 +133,7 @@
     {
         "id": 10,
         "name": "Caterpie",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/caterpie.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
         "type": [
             "Bug"
         ],
@@ -149,7 +149,7 @@
     {
         "id": 11,
         "name": "Metapod",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/metapod.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png",
         "type": [
             "Bug"
         ],
@@ -165,7 +165,7 @@
     {
         "id": 12,
         "name": "Butterfree",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/butterfree.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png",
         "type": [
             "Bug",
             "Flying"
@@ -182,7 +182,7 @@
     {
         "id": 13,
         "name": "Weedle",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/weedle.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
         "type": [
             "Bug",
             "Poison"
@@ -199,7 +199,7 @@
     {
         "id": 15,
         "name": "Beedrill",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/beedrill.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png",
         "type": [
             "Bug",
             "Poison"
@@ -216,7 +216,7 @@
     {
         "id": 16,
         "name": "Pidgey",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/pidgey.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
         "type": [
             "Normal",
             "Flying"
@@ -233,7 +233,7 @@
     {
         "id": 17,
         "name": "Pidgeotto",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/pidgeotto.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png",
         "type": [
             "Normal",
             "Flying"
@@ -250,7 +250,7 @@
     {
         "id": 20,
         "name": "Raticate",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/raticate.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/020.png",
         "type": [
             "Normal"
         ],
@@ -266,7 +266,7 @@
     {
         "id": 24,
         "name": "Arbok",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/arbok.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/024.png",
         "type": [
             "Poison"
         ],
@@ -282,7 +282,7 @@
     {
         "id": 25,
         "name": "Pikachu",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/pikachu.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
         "type": [
             "Electric"
         ],
@@ -298,7 +298,7 @@
     {
         "id": 26,
         "name": "Raichu",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/raichu.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/026.png",
         "type": [
             "Electric"
         ],
@@ -314,7 +314,7 @@
     {
         "id": 35,
         "name": "Clefairy",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/clefairy.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
         "type": [
             "Fairy"
         ],
@@ -330,7 +330,7 @@
     {
         "id": 36,
         "name": "Clefable",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/clefable.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/036.png",
         "type": [
             "Fairy"
         ],
@@ -346,7 +346,7 @@
     {
         "id": 37,
         "name": "Vulpix",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/vulpix.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
         "type": [
             "Fire"
         ],
@@ -362,7 +362,7 @@
     {
         "id": 38,
         "name": "Ninetales",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/ninetales.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/038.png",
         "type": [
             "Fire"
         ],
@@ -378,7 +378,7 @@
     {
         "id": 39,
         "name": "Jigglypuff",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/jigglypuff.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/039.png",
         "type": [
             "Normal",
             "Fairy"
@@ -395,7 +395,7 @@
     {
         "id": 41,
         "name": "Zubat",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/zubat.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/041.png",
         "type": [
             "Poison",
             "Flying"
@@ -412,7 +412,7 @@
     {
         "id": 42,
         "name": "Golbat",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/golbat.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/042.png",
         "type": [
             "Poison",
             "Flying"
@@ -429,7 +429,7 @@
     {
         "id": 43,
         "name": "Oddish",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/oddish.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/043.png",
         "type": [
             "Grass",
             "Poison"
@@ -446,7 +446,7 @@
     {
         "id": 44,
         "name": "Gloom",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/gloom.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/044.png",
         "type": [
             "Grass",
             "Poison"
@@ -463,7 +463,7 @@
     {
         "id": 48,
         "name": "Venonat",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/venonat.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/048.png",
         "type": [
             "Bug",
             "Poison"
@@ -480,7 +480,7 @@
     {
         "id": 50,
         "name": "Diglett",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/diglett.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/050.png",
         "type": [
             "Ground"
         ],
@@ -496,7 +496,7 @@
     {
         "id": 51,
         "name": "Dugtrio",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/dugtrio.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/051.png",
         "type": [
             "Ground"
         ],
@@ -512,7 +512,7 @@
     {
         "id": 52,
         "name": "Meowth",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/meowth.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/052.png",
         "type": [
             "Normal"
         ],
@@ -528,7 +528,7 @@
     {
         "id": 54,
         "name": "Psyduck",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/psyduck.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/054.png",
         "type": [
             "Water"
         ],
@@ -544,7 +544,7 @@
     {
         "id": 55,
         "name": "Golduck",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/golduck.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/055.png",
         "type": [
             "Water"
         ],
@@ -560,7 +560,7 @@
     {
         "id": 56,
         "name": "Mankey",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/mankey.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/056.png",
         "type": [
             "Fighting"
         ],
@@ -576,7 +576,7 @@
     {
         "id": 63,
         "name": "Abra",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/abra.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/063.png",
         "type": [
             "Psychic"
         ],
@@ -592,7 +592,7 @@
     {
         "id": 64,
         "name": "Kadabra",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/kadabra.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/064.png",
         "type": [
             "Psychic"
         ],
@@ -608,7 +608,7 @@
     {
         "id": 65,
         "name": "Alakazam",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/alakazam.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/065.png",
         "type": [
             "Psychic"
         ],
@@ -624,7 +624,7 @@
     {
         "id": 66,
         "name": "Machop",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/machop.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/066.png",
         "type": [
             "Fighting"
         ],
@@ -640,7 +640,7 @@
     {
         "id": 67,
         "name": "Machoke",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/machoke.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/067.png",
         "type": [
             "Fighting"
         ],
@@ -656,7 +656,7 @@
     {
         "id": 68,
         "name": "Machamp",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/machamp.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/068.png",
         "type": [
             "Fighting"
         ],
@@ -672,7 +672,7 @@
     {
         "id": 69,
         "name": "Bellsprout",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/bellsprout.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/069.png",
         "type": [
             "Grass",
             "Poison"
@@ -689,7 +689,7 @@
     {
         "id": 70,
         "name": "Weepinbell",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/weepinbell.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/070.png",
         "type": [
             "Grass",
             "Poison"
@@ -706,7 +706,7 @@
     {
         "id": 74,
         "name": "Geodude",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/geodude.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/074.png",
         "type": [
             "Rock",
             "Ground"
@@ -723,7 +723,7 @@
     {
         "id": 77,
         "name": "Ponyta",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/ponyta.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/077.png",
         "type": [
             "Fire"
         ],
@@ -739,7 +739,7 @@
     {
         "id": 78,
         "name": "Rapidash",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/rapidash.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/078.png",
         "type": [
             "Fire"
         ],
@@ -755,7 +755,7 @@
     {
         "id": 79,
         "name": "Slowpoke",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/slowpoke.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/079.png",
         "type": [
             "Water",
             "Psychic"
@@ -772,7 +772,7 @@
     {
         "id": 80,
         "name": "Slowbro",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/slowbro.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/080.png",
         "type": [
             "Water",
             "Psychic"
@@ -789,7 +789,7 @@
     {
         "id": 81,
         "name": "Magnemite",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/magnemite.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/081.png",
         "type": [
             "Electric",
             "Steel"
@@ -806,7 +806,7 @@
     {
         "id": 82,
         "name": "Magneton",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/magneton.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/082.png",
         "type": [
             "Electric",
             "Steel"
@@ -823,7 +823,7 @@
     {
         "id": 84,
         "name": "Doduo",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/doduo.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/084.png",
         "type": [
             "Normal",
             "Flying"
@@ -840,7 +840,7 @@
     {
         "id": 85,
         "name": "Dodrio",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/dodrio.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/085.png",
         "type": [
             "Normal",
             "Flying"
@@ -857,7 +857,7 @@
     {
         "id": 88,
         "name": "Grimer",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/grimer.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/088.png",
         "type": [
             "Poison"
         ],
@@ -873,7 +873,7 @@
     {
         "id": 90,
         "name": "Shellder",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/shellder.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/090.png",
         "type": [
             "Water"
         ],
@@ -889,7 +889,7 @@
     {
         "id": 91,
         "name": "Cloyster",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/cloyster.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/091.png",
         "type": [
             "Water",
             "Ice"
@@ -906,7 +906,7 @@
     {
         "id": 92,
         "name": "Gastly",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/gastly.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/092.png",
         "type": [
             "Ghost",
             "Poison"
@@ -923,7 +923,7 @@
     {
         "id": 93,
         "name": "Haunter",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/haunter.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/093.png",
         "type": [
             "Ghost",
             "Poison"
@@ -940,7 +940,7 @@
     {
         "id": 94,
         "name": "Gengar",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/gengar.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/094.png",
         "type": [
             "Ghost",
             "Poison"
@@ -957,7 +957,7 @@
     {
         "id": 95,
         "name": "Onix",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/onix.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/095.png",
         "type": [
             "Rock",
             "Ground"
@@ -974,7 +974,7 @@
     {
         "id": 96,
         "name": "Drowzee",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/drowzee.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/096.png",
         "type": [
             "Psychic"
         ],
@@ -990,7 +990,7 @@
     {
         "id": 97,
         "name": "Hypno",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/hypno.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/097.png",
         "type": [
             "Psychic"
         ],
@@ -1006,7 +1006,7 @@
     {
         "id": 100,
         "name": "Voltorb",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/voltorb.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/100.png",
         "type": [
             "Electric"
         ],
@@ -1022,7 +1022,7 @@
     {
         "id": 101,
         "name": "Electrode",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/electrode.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/101.png",
         "type": [
             "Electric"
         ],
@@ -1038,7 +1038,7 @@
     {
         "id": 102,
         "name": "Exeggcute",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/exeggcute.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/102.png",
         "type": [
             "Grass",
             "Psychic"
@@ -1055,7 +1055,7 @@
     {
         "id": 103,
         "name": "Exeggutor",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/exeggutor.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/103.png",
         "type": [
             "Grass",
             "Psychic"
@@ -1072,7 +1072,7 @@
     {
         "id": 104,
         "name": "Cubone",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/cubone.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/104.png",
         "type": [
             "Ground"
         ],
@@ -1088,7 +1088,7 @@
     {
         "id": 105,
         "name": "Marowak",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/marowak.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/105.png",
         "type": [
             "Ground"
         ],
@@ -1104,7 +1104,7 @@
     {
         "id": 106,
         "name": "Hitmonlee",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/hitmonlee.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/106.png",
         "type": [
             "Fighting"
         ],
@@ -1120,7 +1120,7 @@
     {
         "id": 107,
         "name": "Hitmonchan",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/hitmonchan.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/107.png",
         "type": [
             "Fighting"
         ],
@@ -1136,7 +1136,7 @@
     {
         "id": 108,
         "name": "Lickitung",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/lickitung.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/108.png",
         "type": [
             "Normal"
         ],
@@ -1152,7 +1152,7 @@
     {
         "id": 109,
         "name": "Koffing",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/koffing.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/109.png",
         "type": [
             "Poison"
         ],
@@ -1168,7 +1168,7 @@
     {
         "id": 110,
         "name": "Weezing",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/weezing.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/110.png",
         "type": [
             "Poison"
         ],
@@ -1184,7 +1184,7 @@
     {
         "id": 114,
         "name": "Tangela",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/tangela.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/114.png",
         "type": [
             "Grass"
         ],
@@ -1200,7 +1200,7 @@
     {
         "id": 116,
         "name": "Horsea",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/horsea.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/116.png",
         "type": [
             "Water"
         ],
@@ -1216,7 +1216,7 @@
     {
         "id": 117,
         "name": "Seadra",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/seadra.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/117.png",
         "type": [
             "Water"
         ],
@@ -1232,7 +1232,7 @@
     {
         "id": 120,
         "name": "Staryu",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/staryu.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/120.png",
         "type": [
             "Water"
         ],
@@ -1248,7 +1248,7 @@
     {
         "id": 121,
         "name": "Starmie",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/starmie.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/121.png",
         "type": [
             "Water",
             "Psychic"
@@ -1265,7 +1265,7 @@
     {
         "id": 123,
         "name": "Scyther",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/scyther.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/123.png",
         "type": [
             "Bug",
             "Flying"
@@ -1282,7 +1282,7 @@
     {
         "id": 124,
         "name": "Jynx",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/jynx.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/124.png",
         "type": [
             "Ice",
             "Psychic"
@@ -1299,7 +1299,7 @@
     {
         "id": 127,
         "name": "Pinsir",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/pinsir.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/127.png",
         "type": [
             "Bug"
         ],
@@ -1315,7 +1315,7 @@
     {
         "id": 129,
         "name": "Magikarp",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/magikarp.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/129.png",
         "type": [
             "Water"
         ],
@@ -1331,7 +1331,7 @@
     {
         "id": 130,
         "name": "Gyarados",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/gyarados.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/130.png",
         "type": [
             "Water",
             "Flying"
@@ -1348,7 +1348,7 @@
     {
         "id": 131,
         "name": "Lapras",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/lapras.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/131.png",
         "type": [
             "Water",
             "Ice"
@@ -1365,7 +1365,7 @@
     {
         "id": 133,
         "name": "Eevee",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/eevee.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/133.png",
         "type": [
             "Normal"
         ],
@@ -1381,7 +1381,7 @@
     {
         "id": 135,
         "name": "Jolteon",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/jolteon.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/135.png",
         "type": [
             "Electric"
         ],
@@ -1397,7 +1397,7 @@
     {
         "id": 136,
         "name": "Flareon",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/flareon.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/136.png",
         "type": [
             "Fire"
         ],
@@ -1413,7 +1413,7 @@
     {
         "id": 137,
         "name": "Porygon",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/porygon.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/137.png",
         "type": [
             "Normal"
         ],
@@ -1429,7 +1429,7 @@
     {
         "id": 142,
         "name": "Aerodactyl",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/aerodactyl.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/142.png",
         "type": [
             "Rock",
             "Flying"
@@ -1446,7 +1446,7 @@
     {
         "id": 143,
         "name": "Snorlax",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/snorlax.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/143.png",
         "type": [
             "Normal"
         ],
@@ -1462,7 +1462,7 @@
     {
         "id": 144,
         "name": "Articuno",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/articuno.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/144.png",
         "type": [
             "Ice",
             "Flying"
@@ -1479,7 +1479,7 @@
     {
         "id": 145,
         "name": "Zapdos",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/zapdos.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/145.png",
         "type": [
             "Electric",
             "Flying"
@@ -1496,7 +1496,7 @@
     {
         "id": 146,
         "name": "Moltres",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/moltres.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/146.png",
         "type": [
             "Fire",
             "Flying"
@@ -1513,7 +1513,7 @@
     {
         "id": 150,
         "name": "Mewtwo",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/mewtwo.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png",
         "type": [
             "Psychic"
         ],
@@ -1529,7 +1529,7 @@
     {
         "id": 151,
         "name": "Mew",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/mew.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/151.png",
         "type": [
             "Psychic"
         ],
@@ -1545,7 +1545,7 @@
     {
         "id": 175,
         "name": "Togepi",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/togepi.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/175.png",
         "type": [
             "Fairy"
         ],
@@ -1561,7 +1561,7 @@
     {
         "id": 201,
         "name": "Unown",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/unown.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/201.png",
         "type": [
             "Psychic"
         ],
@@ -1577,7 +1577,7 @@
     {
         "id": 202,
         "name": "Wobbuffet",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/wobbuffet.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/202.png",
         "type": [
             "Psychic"
         ],
@@ -1593,7 +1593,7 @@
     {
         "id": 203,
         "name": "Girafarig",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/girafarig.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/203.png",
         "type": [
             "Normal",
             "Psychic"
@@ -1610,7 +1610,7 @@
     {
         "id": 204,
         "name": "Pineco",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/pineco.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/204.png",
         "type": [
             "Bug"
         ],
@@ -1626,7 +1626,7 @@
     {
         "id": 209,
         "name": "Snubbull",
-        "image": "https://jherr-pokemon.s3.us-west-1.amazonaws.com/images/snubbull.jpg",
+        "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/209.png",
         "type": [
             "Fairy"
         ],

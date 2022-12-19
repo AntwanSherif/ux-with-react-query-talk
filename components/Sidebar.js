@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Layout, Typography, List, Input } from '@douyinfe/semi-ui';
 import { IconSearch } from '@douyinfe/semi-icons';
@@ -40,29 +41,23 @@ export function Sidebar() {
 
   return (
     <Layout.Sider className={styles.container}>
-      <div
-        style={{
-          marginRight: 16,
-          width: '100%',
-          display: 'flex',
-          flexWrap: 'wrap'
-        }}
-      >
-        <List
-          className={styles.listContainer}
-          dataSource={filteredList}
-          split={false}
-          emptyContent={<Typography.Text>{loading ? 'loading...' : 'No Pokemon Found'}</Typography.Text>}
-          header={<Input onChange={onSearch} showClear placeholder='search' prefix={<IconSearch />} />}
-          size='small'
-          style={{ flexBasis: '100%', flexShrink: 0 }}
-          renderItem={pokemon => (
-            <List.Item className='list-item'>
-              <Link href={`/pokemon/${pokemon.id}`}>{pokemon.name}</Link>
+      <List
+        className={styles.listContainer}
+        dataSource={filteredList}
+        split={false}
+        emptyContent={<Typography.Text>{loading ? 'loading...' : 'No Pokemon Found'}</Typography.Text>}
+        header={<Input onChange={onSearch} showClear placeholder='search' prefix={<IconSearch />} />}
+        size='small'
+        style={{ flexBasis: '100%', flexShrink: 0 }}
+        renderItem={pokemon => (
+          <Link href={`/pokemon/${pokemon.id}`} className={styles.listItem}>
+            <List.Item className={styles.listItem}>
+              <Image className={styles.thumbnail} src={pokemon.image} alt={pokemon.name} width={40} height={40} />
+              <Typography.Text>{pokemon.name}</Typography.Text>
             </List.Item>
-          )}
-        />
-      </div>
+          </Link>
+        )}
+      />
     </Layout.Sider>
   );
 }
