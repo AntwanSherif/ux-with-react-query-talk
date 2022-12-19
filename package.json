@@ -2,6 +2,11 @@
   "name": "pokemon-rq",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Antwan Sherif",
+    "email": "antwansherif@gmail.com",
+    "url": "https://www.linkedin.com/in/antwansherif/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
