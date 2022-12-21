@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, createContext, useMemo, useContext } from 'react';
 import { STATUS } from '@constants/requestStatus';
 
 const getPokemons = async (onComplete, onError) => {
@@ -12,7 +12,14 @@ const getPokemons = async (onComplete, onError) => {
   }
 };
 
-export function usePokemons() {
+export const PokemonsContext = createContext({
+  pokemons: [],
+  status: STATUS.IDLE,
+  error: null,
+  refetch: () => {}
+});
+
+export function PokemonsProvider({ children }) {
   const [status, setStatus] = useState(STATUS.IDLE);
   const [pokemons, setPokemons] = useState([]);
   const [error, setError] = useState(null);
@@ -35,6 +42,28 @@ export function usePokemons() {
   const refetch = useCallback(() => {
     getPokemons(setPokemons);
   }, []);
+
+  const value = useMemo(
+    () => ({
+      pokemons,
+      status,
+      error,
+      refetch
+    }),
+    [error, pokemons, status, refetch]
+  );
+
+  return <PokemonsContext.Provider value={value}>{children}</PokemonsContext.Provider>;
+}
+
+export function usePokemons() {
+  const contextValue = useContext(PokemonsContext);
+
+  if (!contextValue) {
+    throw new Error('usePokemons must be used within a PokemonsProvider');
+  }
+
+  const { pokemons, status, error, refetch } = contextValue;
 
   return {
     pokemons,
