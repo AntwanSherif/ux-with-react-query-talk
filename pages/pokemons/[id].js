@@ -14,7 +14,7 @@ export default function Details() {
   const router = useRouter();
   const { id: pokemonId } = router.query;
 
-  const { pokemon, setPokemon, isLoading, isSuccess } = usePokemon(pokemonId);
+  const { data: pokemon, isLoading, isSuccess } = usePokemon(pokemonId);
   const [inEditMode, setInEditMode] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [newName, setNewName] = useState('');
@@ -41,7 +41,6 @@ export default function Details() {
 
     const newPokemon = await result.json();
 
-    setPokemon(newPokemon);
     setNewName(newPokemon.name);
     setIsSaving(false);
     setInEditMode(false);
