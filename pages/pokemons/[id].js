@@ -17,6 +17,7 @@ export default function Details() {
   const [pokemon, setPokemon] = useState(skeletonPokemon);
   const [loading, setLoading] = useState(Object.is(pokemon, skeletonPokemon));
   const [inEditMode, setInEditMode] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [newName, setNewName] = useState('');
 
   useEffect(() => {
@@ -48,7 +49,9 @@ export default function Details() {
       return;
     }
 
-    await fetch(`/api/pokemons/${pokemonId}`, {
+    setIsSaving(true);
+
+    const result = await fetch(`/api/pokemons/${pokemonId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -56,7 +59,12 @@ export default function Details() {
       body: JSON.stringify({ ...pokemon, name: newName })
     });
 
-    setNewName(pokemon.name);
+    const newPokemon = await result.json();
+
+    setPokemon(newPokemon);
+    setNewName(newPokemon.name);
+    setIsSaving(false);
+    setInEditMode(false);
   };
 
   return (
@@ -73,8 +81,10 @@ export default function Details() {
 
         {inEditMode ? (
           <ButtonGroup theme='borderless' type='secondary'>
-            <Button onClick={toggleEdit}>Cancel</Button>
-            <Button onClick={save} disabled={!newName}>
+            <Button onClick={toggleEdit} disabled={isSaving}>
+              Cancel
+            </Button>
+            <Button onClick={save} disabled={!newName} loading={isSaving}>
               Save
             </Button>
           </ButtonGroup>
