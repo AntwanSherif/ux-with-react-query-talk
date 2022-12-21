@@ -3,49 +3,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Layout, Typography, List, Input } from '@douyinfe/semi-ui';
 import { IconSearch } from '@douyinfe/semi-icons';
+import { useSearchPokemons } from '@hooks/useSearchPokemons';
 import styles from './Sidebar.module.css';
 
 export function Sidebar() {
-  const [pokemons, setPokemons] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [filteredList, setFilteredList] = useState([]);
-
-  useEffect(() => {
-    const getPokemon = async () => {
-      const result = await fetch('/api/pokemons');
-      const data = await result.json();
-
-      setPokemons(data);
-      setFilteredList(data);
-      setLoading(false);
-    };
-
-    setLoading(true);
-    getPokemon();
-  }, []);
-
-  const onSearch = useCallback(
-    value => {
-      let newList;
-
-      if (value) {
-        newList = pokemons.filter(item => item.name.includes(value));
-      } else {
-        newList = pokemons;
-      }
-
-      setFilteredList(newList);
-    },
-    [pokemons]
-  );
+  const { list, isLoading, onSearch } = useSearchPokemons();
 
   return (
     <Layout.Sider className={styles.container}>
       <List
         className={styles.listContainer}
-        dataSource={filteredList}
+        dataSource={list}
         split={false}
-        emptyContent={<Typography.Text>{loading ? 'loading...' : 'No pokemons found'}</Typography.Text>}
+        emptyContent={<Typography.Text>{isLoading ? 'loading...' : 'No pokemons found'}</Typography.Text>}
         header={<Input onChange={onSearch} showClear placeholder='search' prefix={<IconSearch />} size='large' />}
         size='small'
         style={{ flexBasis: '100%', flexShrink: 0 }}

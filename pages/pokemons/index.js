@@ -1,26 +1,12 @@
-import { useState, useEffect, useCallback } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { SidebarLayout } from '@layouts/SidebarLayout';
 import { PokemonsList } from '@components/PokemonsList';
+import { usePokemons } from '@hooks/usePokemons';
 import styles from '@styles/Home.module.css';
 
-const getPokemons = async onComplete => {
-  const result = await fetch('/api/pokemons');
-  const data = await result.json();
-
-  onComplete(data);
-};
 export default function Home() {
-  const [pokemons, setPokemons] = useState([]);
-
-  useEffect(() => {
-    getPokemons(setPokemons);
-  }, []);
-
-  const refetch = useCallback(() => {
-    getPokemons(setPokemons);
-  }, []);
+  const { pokemons, isSuccess, refetch } = usePokemons();
 
   return (
     <div className={styles.container}>
@@ -32,10 +18,10 @@ export default function Home() {
       </Head>
 
       <main>
-        {!pokemons.length ? (
-          <Image src='/loading.gif' alt='loading...' width={180} height={180} />
-        ) : (
+        {isSuccess ? (
           <PokemonsList pokemons={pokemons} onAdd={refetch} />
+        ) : (
+          <Image src='/loading.gif' alt='loading...' width={180} height={180} />
         )}
       </main>
     </div>
