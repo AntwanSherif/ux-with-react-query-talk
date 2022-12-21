@@ -7,7 +7,7 @@ import { usePokemons } from '@hooks/usePokemons';
 import styles from '@styles/Home.module.css';
 
 export default function Home() {
-  const { pokemons, isLoading, isError, error, refetch } = usePokemons();
+  const { data: pokemons, isLoading, isError, error, refetch } = usePokemons();
 
   return (
     <div className={styles.container}>

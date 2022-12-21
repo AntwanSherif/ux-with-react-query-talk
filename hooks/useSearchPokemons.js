@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState } from 'react';
 import { usePokemons } from './usePokemons';
 
 export function useSearchPokemons() {
-  const { pokemons, isLoading, isSuccess } = usePokemons();
+  const { data: pokemons, isLoading, isSuccess } = usePokemons();
   const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {

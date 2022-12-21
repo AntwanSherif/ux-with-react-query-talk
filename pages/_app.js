@@ -1,9 +1,18 @@
-import { PokemonsProvider } from '@hooks/usePokemons';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import '@styles/globals.css';
+
+const queryClient = new QueryClient();
 
 export default function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page);
 
-  return <PokemonsProvider>{getLayout(<Component {...pageProps} />)}</PokemonsProvider>;
+  return (
+    <QueryClientProvider client={queryClient}>
+      {getLayout(<Component {...pageProps} />)}
+
+      <ReactQueryDevtools />
+    </QueryClientProvider>
+  );
 }
 
