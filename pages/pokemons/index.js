@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { SidebarLayout } from '@layouts/SidebarLayout';
 import { PokemonsList } from '@components/PokemonsList';
+import { ErrorDisplay } from '@components/ErrorDisplay';
 import { usePokemons } from '@hooks/usePokemons';
 import styles from '@styles/Home.module.css';
 
 export default function Home() {
-  const { pokemons, isSuccess, refetch } = usePokemons();
+  const { pokemons, isLoading, isError, error, refetch } = usePokemons();
 
   return (
     <div className={styles.container}>
@@ -18,10 +19,12 @@ export default function Home() {
       </Head>
 
       <main>
-        {isSuccess ? (
-          <PokemonsList pokemons={pokemons} onAdd={refetch} />
-        ) : (
+        {isLoading ? (
           <Image src='/loading.gif' alt='loading...' width={180} height={180} />
+        ) : isError ? (
+          <ErrorDisplay error={error} />
+        ) : (
+          <PokemonsList pokemons={pokemons} onAdd={refetch} />
         )}
       </main>
     </div>
