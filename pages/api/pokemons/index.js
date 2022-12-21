@@ -4,7 +4,7 @@ import { sleep } from '@helpers/sleep';
 export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'no-store');
 
-  await sleep(3000);
+  await sleep(1500);
 
   if (req.method === 'POST') {
     const pokemon = pokemonsRepo.create(req.body);

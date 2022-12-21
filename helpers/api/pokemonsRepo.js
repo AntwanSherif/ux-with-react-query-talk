@@ -3,7 +3,7 @@ import fs from 'fs';
 let pokemons = require('json/data.json');
 
 export const pokemonsRepo = {
-  getAll: () => pokemons,
+  getAll: () => pokemons.map(({ id, name, image }) => ({ id, name, image })),
   getById: id => pokemons.find(x => x.id.toString() === id.toString()),
   create,
   update,
