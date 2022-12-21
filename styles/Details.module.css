@@ -3,6 +3,22 @@
   align-items: center;
 }
 
+.actionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editBtn {
+  color: var(--blue) !important;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 .layout {
   width: 80%;
   margin: 0 auto;
@@ -26,6 +42,25 @@
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.editableName {
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.editableName:hover,
+.editableName:focus {
+  background-color: transparent;
+}
+
+.editableName > input {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0;
 }
 
 .tags {

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { IconChevronLeft } from '@douyinfe/semi-icons';
-import { Skeleton, TagGroup } from '@douyinfe/semi-ui';
+import { Skeleton, TagGroup, Input, Button, ButtonGroup } from '@douyinfe/semi-ui';
 import styles from '@styles/Details.module.css';
 import { SidebarLayout } from '@layouts/SidebarLayout';
 
@@ -13,8 +13,11 @@ const skeletonPokemon = { name: '', image: '' };
 export default function Details() {
   const router = useRouter();
   const { id: pokemonId } = router.query;
+
   const [pokemon, setPokemon] = useState(skeletonPokemon);
   const [loading, setLoading] = useState(Object.is(pokemon, skeletonPokemon));
+  const [inEditMode, setInEditMode] = useState(false);
+  const [newName, setNewName] = useState('');
 
   useEffect(() => {
     const getPokemon = async () => {
@@ -35,31 +38,51 @@ export default function Details() {
     };
   }, [pokemonId]);
 
+  const toggleEdit = () => {
+    setInEditMode(prev => !prev);
+    setNewName(pokemon.name);
+  };
+
+  const save = async () => {
+    if (newName === pokemon.name) {
+      return;
+    }
+
+    await fetch(`/api/pokemons/${pokemonId}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ ...pokemon, name: newName })
+    });
+
+    setNewName(pokemon.name);
+  };
+
   return (
     <div>
       <Head>
         <title>{pokemon?.name ?? 'Pokemons'}</title>
       </Head>
 
-      <Link href='/pokemons' className={styles.backHomeLink}>
-        <IconChevronLeft size='large' style={{ marginRight: '0.5rem' }} />
-        Back to Home
-      </Link>
+      <div className={styles.actionsContainer}>
+        <Link href='/pokemons' className={styles.backHomeLink}>
+          <IconChevronLeft size='large' style={{ marginRight: '0.5rem' }} />
+          Back to Home
+        </Link>
 
-      <div>
-        {/* <button
-          onClick={() =>
-            fetch(`/api/pokemons/${pokemonId}`, {
-              method: 'PUT',
-              headers: {
-                'Content-Type': 'application/json'
-              },
-              body: JSON.stringify({ ...pokemon, name: 'Antwan' })
-            })
-          }
-        >
-          Update Pokemon Name
-        </button> */}
+        {inEditMode ? (
+          <ButtonGroup theme='borderless' type='secondary'>
+            <Button onClick={toggleEdit}>Cancel</Button>
+            <Button onClick={save} disabled={!newName}>
+              Save
+            </Button>
+          </ButtonGroup>
+        ) : (
+          <Button className={styles.editBtn} theme='borderless' onClick={toggleEdit}>
+            Edit
+          </Button>
+        )}
       </div>
 
       <div className={styles.layout}>
@@ -69,7 +92,11 @@ export default function Details() {
 
         <div>
           <Skeleton style={{ width: 180 }} placeholder={<Skeleton.Title className={styles.name} />} loading={loading}>
-            <div className={styles.name}>{pokemon.name}</div>
+            {inEditMode ? (
+              <Input className={styles.editableName} value={newName} onChange={setNewName} />
+            ) : (
+              <div className={styles.name}>{pokemon.name}</div>
+            )}
           </Skeleton>
 
           <Skeleton
