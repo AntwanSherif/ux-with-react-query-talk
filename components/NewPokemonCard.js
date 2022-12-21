@@ -1,29 +1,24 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import { Card, Spin } from '@douyinfe/semi-ui';
 import { IconPlus } from '@douyinfe/semi-icons';
+import { useAddPokemon } from '@hooks/useAddPokemon';
 import styles from './NewPokemonCard.module.css';
+import { usePokemons } from '@hooks/usePokemons';
 
-const newPokemonsNames = ['karma', 'Maged', 'Meego', 'Aya', 'Samir'];
+const newPokemonsNames = ['Samira', 'karma', 'Maged', 'Meego', 'Aya', 'Samir'];
 
-export function NewPokemonCard({ onAdd }) {
-  const [loading, setLoading] = useState(false);
+export function NewPokemonCard() {
+  const { mutate, isLoading: isMutating, isSuccess } = useAddPokemon();
+  const { isFetching: isFetchingPokemons } = usePokemons();
 
-  const createNewPokemon = () => {
-    setLoading(true);
+  const isLoading = isMutating || (isSuccess && isFetchingPokemons);
 
-    fetch(`/api/pokemons`, {
-      method: 'POST',
-      body: newPokemonsNames.pop()
-    })
-      .then(() => onAdd())
-      .finally(() => {
-        setLoading(false);
-      });
+  const addNewPokemon = () => {
+    mutate(newPokemonsNames[Math.floor(Math.random() * newPokemonsNames.length)]);
   };
 
-  const cardClasses = loading ? `${styles.card} ${styles.loading}` : styles.card;
-  const contentClasses = loading ? `${styles.content} ${styles.loading}` : styles.content;
+  const cardClasses = isLoading ? `${styles.card} ${styles.loading}` : styles.card;
+  const contentClasses = isLoading ? `${styles.content} ${styles.loading}` : styles.content;
 
   return (
     <Card
@@ -31,17 +26,17 @@ export function NewPokemonCard({ onAdd }) {
       className={cardClasses}
       cover={
         <div className={contentClasses}>
-          {loading ? (
+          {isLoading ? (
             <Image src='/creating.gif' alt='creating new pokemon' width={130} height={30} />
           ) : (
             <IconPlus className={styles.icon} style={{ color: 'white' }} />
           )}
         </div>
       }
-      onClick={!loading ? createNewPokemon : undefined}
+      onClick={!isLoading ? addNewPokemon : undefined}
     >
       <div className={styles.cardBody}>
-        {loading ? <Spin /> : <Card.Meta title='Surprise me!' className={styles.text} />}
+        {isLoading ? <Spin /> : <Card.Meta title='Surprise me!' className={styles.text} />}
       </div>
     </Card>
   );
