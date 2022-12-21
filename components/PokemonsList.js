@@ -4,6 +4,7 @@ import { Card, CardGroup } from '@douyinfe/semi-ui';
 import { rgbDataURL } from '@helpers/imagePlaceholder';
 import styles from './PokemonsList.module.css';
 import { NewPokemonCard } from './NewPokemonCard';
+import { prefetchPokemon } from '@hooks/usePokemon';
 
 export function PokemonsList({ pokemons, onAdd }) {
   return (
@@ -25,6 +26,7 @@ export function PokemonsList({ pokemons, onAdd }) {
                 height={200}
               />
             }
+            onMouseEnter={() => prefetchPokemon(pokemon.id)}
           >
             <Card.Meta title={pokemon.name} />
           </Card>
