@@ -1,11 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-
-const STATUS = {
-  IDLE: 'idle',
-  LOADING: 'loading',
-  SUCCESS: 'success',
-  ERROR: 'error'
-};
+import { STATUS } from '@constants/requestStatus';
 
 const getPokemons = async (onComplete, onError) => {
   try {
