@@ -10,8 +10,9 @@ const getPokemon = async id => {
 
 export function usePokemon(pokemonId) {
   return useQuery({
-    queryKey: ['pokemons', pokemonId.toString()],
-    queryFn: () => getPokemon(pokemonId)
+    queryKey: ['pokemons', pokemonId?.toString()],
+    queryFn: () => getPokemon(pokemonId),
+    enabled: Boolean(pokemonId)
     // placeholderData: () => {
     //   const foundPokemon = queryClient.getQueryData(['pokemons'])?.find(p => p.id.toString() === pokemonId.toString());
 
